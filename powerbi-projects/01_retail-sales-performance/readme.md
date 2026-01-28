@@ -1,3 +1,5 @@
+![Dashboard Preview](/Screenshot.png)
+
 # Power BI Sales Dashboard (DAX Modeling)
 
 ## Overview
