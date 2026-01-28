@@ -41,9 +41,10 @@ VAR BaseTable =
     )
 RETURN
     DISTINCT ( BaseTable )
+```
 
 ## Details Table (DAX Calculated Table)
----
+```DAX
 Details =
 SELECTCOLUMNS (
     sales_data_sample,
@@ -54,8 +55,9 @@ SELECTCOLUMNS (
     "Sub-Category", sales_data_sample[PRODUCTCODE],
     "PaymentMode", sales_data_sample[DEALSIZE]
 )
-
+```
 ## Profit (DAX Calculated Measure)
+```DAX
 Profit :=
 SUMX (
     Details,
