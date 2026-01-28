@@ -43,7 +43,7 @@ RETURN
     DISTINCT ( BaseTable )
 
 ## Details Table (DAX Calculated Table)
-
+---
 Details =
 SELECTCOLUMNS (
     sales_data_sample,
