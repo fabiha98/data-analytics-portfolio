@@ -1,9 +1,35 @@
-Data source is:
-https://www.kaggle.com/datasets/kyanyoga/sample-sales-data
+# Power BI Sales Dashboard (DAX Modeling)
 
-Once the data is collected as CSV file, Further tables (Orders and Details) are careated with help of DAX create table queries. 
+## Overview
+This project demonstrates how to transform and model sales data using **DAX calculated tables and measures** in Power BI.  
+A star schema was created from the raw CSV data, and key measures like Profit and Profit Margin were defined to enable dynamic, filter-aware analysis.
 
-Orders = 
+---
+
+## Data Source
+The dataset is sourced from Kaggle:
+
+[Sample Sales Data](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data)
+
+- Downloaded as CSV
+- Loaded into Power BI for analysis and modeling
+
+---
+
+## Data Preparation
+After loading the data into Power BI, the flat dataset was normalized into two tables using **DAX calculated tables**:
+
+1. **Orders** – header table containing unique orders
+2. **Details** – fact table containing order line items
+
+This structure follows a **star schema**, enabling efficient aggregation and dynamic measures.
+
+---
+
+## Orders Table (DAX Calculated Table)
+
+```DAX
+Orders =
 VAR BaseTable =
     SELECTCOLUMNS (
         sales_data_sample,
@@ -15,9 +41,8 @@ VAR BaseTable =
     )
 RETURN
     DISTINCT ( BaseTable )
-    
 
-Details = 
+Details =
 SELECTCOLUMNS (
     sales_data_sample,
     "Order ID", sales_data_sample[ORDERNUMBER],
@@ -28,10 +53,7 @@ SELECTCOLUMNS (
     "PaymentMode", sales_data_sample[DEALSIZE]
 )
 
-
-After that Profit measure is created:
-
-Profit = 
+Profit :=
 SUMX (
     Details,
     VAR Margin =
@@ -42,3 +64,6 @@ SUMX (
         Details[Amount] * Margin
 )
 
+Profit Margin % :=
+DIVIDE ( [Profit], [Total Sales] )
+```
