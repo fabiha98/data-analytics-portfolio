@@ -1,4 +1,4 @@
-![Dashboard Preview](/Screenshot.png)
+![Dashboard Preview](01_retail-sales-performance/Screenshot.png)
 
 # Power BI Sales Dashboard (DAX Modeling)
 
