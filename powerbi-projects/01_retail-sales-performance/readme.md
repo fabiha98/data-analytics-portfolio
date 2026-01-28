@@ -1,6 +1,8 @@
 Data source is:
 https://www.kaggle.com/datasets/kyanyoga/sample-sales-data
+
 Once the data is collected as CSV file, Further tables (Orders and Details) are careated with help of DAX create table queries. 
+
 Orders = 
 VAR BaseTable =
     SELECTCOLUMNS (
@@ -13,6 +15,7 @@ VAR BaseTable =
     )
 RETURN
     DISTINCT ( BaseTable )
+    
 
 Details = 
 SELECTCOLUMNS (
@@ -27,6 +30,7 @@ SELECTCOLUMNS (
 
 
 After that Profit measure is created:
+
 Profit = 
 SUMX (
     Details,
