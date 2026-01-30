@@ -33,14 +33,6 @@ This dashboard visualizes retail sales data specifically filtered for **Q4**. Th
 Profit Margin % :=
 DIVIDE ( [Profit], [Total Sales] )
 ```
-
-
-# Power BI Sales Dashboard (DAX Modeling)
-
-## Overview
-This project demonstrates how to transform and model sales data using **DAX calculated tables and measures** in Power BI.  
-A star schema was created from the raw CSV data, and key measures like Profit and Profit Margin were defined to enable dynamic, filter-aware analysis.
-
 ---
 
 ## Data Source
