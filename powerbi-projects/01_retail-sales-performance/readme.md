@@ -7,6 +7,8 @@
 The objective of this project was to analyze Q4 sales performance to identify key revenue drivers and customer behavior. The business needed to understand which sub-categories yield the highest profit, determine the preferred payment methods used by customers, and identify top-tier clients to optimize year-end sales strategies and resource allocation.
 
 ### Dataset Explanation
+https://www.kaggle.com/datasets/kyanyoga/sample-sales-data
+
 This dashboard visualizes retail sales data specifically filtered for **Q4**. The data includes:
 * **Product Data:** Performance metrics for various sub-categories and broader categories.
 * **Customer Data:** Sales amounts attributed to specific corporate and individual clients.
