@@ -1,5 +1,5 @@
 # Data Analytics Portfolio
-### Power BI | SQL | Excel | Business Insights
+### Power BI | SQL | Excel | Python | Business Insights
 
 This repository contains end-to-end data analytics projects focused on
 solving real business problems using data storytelling and insights,
