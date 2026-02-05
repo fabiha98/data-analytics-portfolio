@@ -137,11 +137,3 @@ by combining:
 It closely mirrors how customer analytics is performed in real business environments.
 
 ---
-
-
----
-
-## 🚀 Future Enhancements
-- Convert CLV model into a **Power BI dashboard**
-- Add **RFM or Cohort analysis**
-- Schedule automated refresh and reporting
