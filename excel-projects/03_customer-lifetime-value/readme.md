@@ -138,12 +138,6 @@ It closely mirrors how customer analytics is performed in real business environm
 
 ---
 
-## 📸 Screenshots (Optional)
-- Power Query Editor
-- CLV Pivot Tables
-- VBA Insight Output
-
-(Stored in `/screenshots` folder)
 
 ---
 
