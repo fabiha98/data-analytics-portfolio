@@ -1,4 +1,4 @@
-![Dashboard Preview](3.png)
+![Dashboard Preview](three.png)
 
 ## Customer Segmentation Analysis Dashboard
 
