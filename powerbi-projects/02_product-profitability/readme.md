@@ -1,4 +1,4 @@
-![Dashboard Preview](2.png)
+![Dashboard Preview](two.png)
 ## Sales & Profit Analysis Dashboard
 
 ---
