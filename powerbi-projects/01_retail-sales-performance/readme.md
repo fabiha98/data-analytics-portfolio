@@ -1,4 +1,4 @@
-![Dashboard Preview](Screenshot.png)
+![Dashboard Preview](1.png)
 ## Sales Performance Dashboard
 
 ---
